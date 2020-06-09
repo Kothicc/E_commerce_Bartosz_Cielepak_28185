@@ -10,8 +10,8 @@ td{
 div {
   background-image: url('https://storage.needpix.com/rsynced_images/background-4232859_1280.png');
   background-attachment: fixed;
-  background-size: 100%;
-  background-repeat: repeat-y;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 p{
@@ -26,6 +26,7 @@ img.center{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100px;
 }
 
 .kolor{
@@ -100,4 +101,8 @@ button:active {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+#cartTable{
+  margin:0 auto;
+  text-align: center;
 }

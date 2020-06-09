@@ -16,8 +16,8 @@
   div {
     background-image: url('https://storage.needpix.com/rsynced_images/background-4232859_1280.png');
     background-attachment: fixed;
-    background-size: 100%;
-    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
 
   li{
@@ -42,7 +42,7 @@
     cursor:pointer;
     color:#ffffff;
     font-family:Arial;
-    font-size:15px;
+    //font-size:15px;
     font-weight:bold;
     padding:6px 24px;
     text-decoration:none;
@@ -87,4 +87,5 @@
 #productsTable{
   width: 50%;
   margin:0 auto;
+  text-align: center;
 }
