@@ -1,18 +1,14 @@
 <div>
     <div style="display: flex;flex-direction: row;">
-        <img src="https://via.placeholder.com/100" alt="">
-        <h2>Sklep z softłerem</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Internet_Explorer_9_icon.svg/1024px-Internet_Explorer_9_icon.svg.png" alt="https://via.placeholder.com/100" width="100px">
+        <h2 style="color: wheat;">Sklep z softłerem</h2>
     </div>
 
     <button routerLink="/adm_dashboard">Panel Administratora</button>
-
+    <div><button id="cartBtn" routerLink="/cart">
+      Koszyk: {{getCartQuantity()}}
+    </button></div>
     <div style="display: flex; justify-content: center;">
-        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
-        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
-    </div>
-    <div>
-      <button id="cartBtn" routerLink="/cart">
-        {{getCartQuantity()}}
-      </button>
-    </div>
+      <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
+      <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
 </div>
