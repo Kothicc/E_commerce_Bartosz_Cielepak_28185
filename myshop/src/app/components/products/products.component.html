@@ -1,7 +1,10 @@
 <app-panel-top></app-panel-top>
-
-<button routerLink="/landing">Powrót</button>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<button class="myButton" routerLink="/landing">Powrót</button>
 <div class="products">
     <table style="margin:0 auto;" id="productsTable">
         <thead *ngIf="this.mainService.products">
@@ -14,19 +17,20 @@
         <tbody>
           <ng-container *ngFor="let product of this.mainService.products?.productsTable">
             <tr style="background-color: whitesmoke;">
-              <td><img src="{{product.thumbnail}}" alt=""></td>
-              <td>
-                <ul>
-                  <li>Tytuł: {{product.title}}</li>
-                  <li>Cena: {{product.price}}</li>
-                  <li>Kategoria: {{product.category}}</li>
-                </ul>
-              </td>
-              <td>
-                <button (click)="addToCart(product)">Do koszyka</button>
-              </td>
+            <td><img src="{{product.thumbnail}}" alt=""></td>
+            <td>
+            <ul>
+            <li>Tytuł: {{product.title}}</li>
+            <li>Cena: {{product.price}}</li>
+            <li>Kategoria: {{product.category}}</li>
+            </ul>
+            </td>
+            <td>
+            <button (click)="addToCart(product)">Do koszyka</button>
+            </td>
             </tr>
-          </ng-container>
+            </ng-container>
         </tbody>
     </table>
+    <p>&nbsp;</p>
 </div>

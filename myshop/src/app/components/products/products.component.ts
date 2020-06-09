@@ -18,7 +18,7 @@ export class ProductsComponent implements OnInit {
 
   addToCart(product){
     this.mainService.cart.push({product});
-    console.log("dodano do koszyka produkt: ");
+    console.log('dodano do koszyka produkt: ');
     console.log(product);
   }
 

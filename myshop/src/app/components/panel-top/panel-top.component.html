@@ -1,14 +1,19 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div>
     <div style="display: flex;flex-direction: row;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Internet_Explorer_9_icon.svg/1024px-Internet_Explorer_9_icon.svg.png" alt="https://via.placeholder.com/100" width="100px">
-        <h2 style="color: wheat;">Sklep z softłerem</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Internet_Explorer_9_icon.svg/1024px-Internet_Explorer_9_icon.svg.png" alt="https://via.placeholder.com/100" width="100px">
+      <h2>bc28185 shop</h2>
     </div>
-
     <button routerLink="/adm_dashboard">Panel Administratora</button>
-    <div><button id="cartBtn" routerLink="/cart">
-      Koszyk: {{getCartQuantity()}}
-    </button></div>
-    <div style="display: flex; justify-content: center;">
-      <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
-      <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+<div><button class="myButton" id="cartBtn" routerLink="/cart">
+  Koszyk: {{getCartQuantity()}}
+</button></div>
+<div style="display: flex; justify-content: center;">
+  <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
+  <button class="myButton" (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+</div>
 </div>
